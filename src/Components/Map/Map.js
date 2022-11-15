@@ -69,7 +69,11 @@ const Map = () => {
       </button>
       <div className="MapsContainerFlex">
         {categoryData ? (
-          <div className={mapMode ? "DarkMode MapContainer" : "MapContainer"}>
+          <div
+            className={
+              mapMode ? "DarkMode MapContainer" : "LightMode MapContainer"
+            }
+          >
             <MapContainer
               id="map"
               center={StartingPosition}

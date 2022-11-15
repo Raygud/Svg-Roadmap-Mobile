@@ -8,6 +8,9 @@
     -webkit-filter: invert(1) hue-rotate(0deg) sepia(100%) saturate(0%) brightness(1.5) grayscale(100%);
 }
 
+/* .LightMode {
+    -webkit-filter: sepia(0%) hue-rotate(190deg) saturate(200%) grayscale(0%) brightness(100%) invert(1) contrast(90%);
+} */
 
 /* .leaflet-control-zoom-in{
     position: absolute;
