@@ -6,22 +6,12 @@
     outline: inherit;
 }
 
-.DarkLight {
-    position: relative;
-    width: 15vw;
-    border-radius: 15px;
-    display: flex;
-    justify-content: space-between;
-    z-index: 9999;
-    margin: 0;
-    background-color: rgb(26, 24, 24);
-    color: white;
-}
+
 
 .Switcher {
     position: absolute;
     left: 0%;
-    top: 5vw;
+    top: 0;
     width: 55%;
     height: 100%;
     border-radius: 7px;
