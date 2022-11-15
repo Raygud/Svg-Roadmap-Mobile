@@ -26,6 +26,7 @@
 }
 
 .ButtonOpen {
+    position: absolute;
     display: none;
 }
 

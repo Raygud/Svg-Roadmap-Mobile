@@ -9,6 +9,12 @@
 }
 
 
+/* .leaflet-control-zoom-in{
+    position: absolute;
+    bottom: 90vh;
+    z-index: 9999;
+} */
+
 .leaflet-popup {
     transform: none !important;
     position: absolute !important;
@@ -122,7 +128,7 @@
 
 .DarkLight {
     position: absolute;
-    top: 10vw;
+    bottom: 90vh;
     right: 1vw;
     width: 13vw;
     border-radius: 15px;
