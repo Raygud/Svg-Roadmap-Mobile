@@ -1,0 +1,155 @@
+.leaflet-container {
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+}
+
+.DarkMode {
+    -webkit-filter: invert(1) hue-rotate(0deg) sepia(100%) saturate(0%) brightness(1.5) grayscale(100%);
+}
+
+
+.leaflet-popup {
+    transform: none !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: -42vw !important;
+    align-items: right !important;
+    justify-items: right !important;
+    width: 100vw;
+}
+
+.leaflet-container .leaflet-popup-content-wrapper .popup_modle {}
+
+
+.leaflet-container .leaflet-popup-content-wrapper .popup_modle {
+    z-index: 1000;
+    position: absolute;
+    right: 0 !important;
+}
+
+.leaflet-popup-tip {
+    background: rgba(0, 0, 0, 0) !important;
+    box-shadow: none !important;
+}
+
+.leaflet-popup-content-wrapper {
+    pointer-events: none;
+}
+
+.leaflet-popup-tip-container {
+    pointer-events: none;
+}
+
+.StickyPopUp {
+    position: absolute;
+    width: 100vw;
+    box-sizing: border-box;
+    background-color: whitesmoke;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 1vw;
+    width: 95vw;
+    height: 40vh;
+    z-index: 9999;
+    transition: 500ms ease-in-out;
+    border-radius: 20px;
+    border: 2px solid rgba(0, 0, 0, 0.201);
+    padding: 5vw;
+    padding-top: 7.3vw;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    box-shadow: 0vw 3vw 3vw 1vw rgba(0, 0, 0, 0.392);
+}
+
+.StickyHeader {
+    display: flex;
+    justify-content: space-between;
+    height: 8vw;
+}
+
+.StickyHeaderTitel {
+    font-size: 8vw;
+    margin: 0vw 0vw 0vw 0vw;
+    padding: 0;
+    line-height: 8vw;
+}
+
+.StickyHeaderImg {
+    margin-top: 3vw;
+    width: 100%;
+    height: 35vw;
+}
+
+.StickyPopUpButton {
+    width: 8vw;
+    height: 8vw;
+    border-radius: 5px;
+    background-color: rgb(233, 75, 75);
+    color: white;
+    font-size: 6vw;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.StickyHeaderName {
+    font-size: 6vw;
+    margin: 0;
+    padding: 0;
+}
+
+.StickHeaderInfo {
+    text-align: left;
+}
+
+.StickyHeaderDuration {
+    margin: 0;
+    margin-top: -1vw;
+    padding: 0;
+}
+
+.StickyHeaderDescription {
+    margin-top: 1vw;
+    padding: 0;
+}
+
+.HiddenPopUp {
+    display: none;
+}
+
+.DarkLight {
+    position: absolute;
+    top: 1vw;
+    right: 1vw;
+    width: 13vw;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 99099;
+    margin: 0;
+    background-color: rgb(26, 24, 24);
+    color: white;
+}
+
+
+.Switcher {
+    position: absolute;
+    left: 0%;
+    top: 0;
+    width: 55%;
+    height: 100%;
+    border-radius: 7px;
+    background-color: rgb(255, 255, 255);
+    transition: 250ms ease-in-out;
+}
+
+.SwitcherDark {
+    left: 46%;
+}
+
+.SwitcherLight {
+    left: 0%;
+}
