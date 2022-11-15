@@ -42,7 +42,7 @@ const Map = () => {
   const [coursedata, setCourseData] = useState([]);
   const [categoryData, setCategoryData] = useState([]);
   const [isClicked, setIsClicked] = useState([]);
-  const [mapMode, setMapMode] = useState(true);
+  const [mapMode, setMapMode] = useState(false);
   const [categoryToFetch, setCategoryToFetch] = useState([]);
   // fetch data
   useEffect(() => {
