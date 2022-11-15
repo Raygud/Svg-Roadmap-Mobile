@@ -3,7 +3,7 @@
     box-sizing: border-box;
     background-color: whitesmoke;
     width: 100%;
-    height: 75vh;
+    height: 76vh;
     z-index: 9999;
     transition: 500ms ease-in-out;
     border-top-right-radius: 20px;
@@ -48,13 +48,13 @@
 }
 
 .SvgMenuOpen {
-    bottom: -10vw;
+    bottom: -13vw;
     box-shadow: 0vw -3vw 3vw 1vw rgba(0, 0, 0, 0.392);
 
 }
 
 .SvgMenuClosed {
-    bottom: -77vh;
+    bottom: -80vh;
     box-shadow: 0vw -3vw 1vw -2vw rgba(0, 0, 0, 0.392);
 
 
