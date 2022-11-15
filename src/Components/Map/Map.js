@@ -58,16 +58,16 @@ const Map = () => {
   }, [runEffect]);
   return (
     <>
-      <button className="DarkLight" onClick={() => setMapMode(!mapMode)}>
-        <BsSunFill />
-        <BsMoonStarsFill />
-        <div
-          className={
-            mapMode ? "SwitcherDark Switcher" : "SwitcherLight Switcher"
-          }
-        ></div>
-      </button>
       <div className="MapsContainerFlex">
+        <button className="DarkLight" onClick={() => setMapMode(!mapMode)}>
+          <BsSunFill />
+          <BsMoonStarsFill />
+          <div
+            className={
+              mapMode ? "SwitcherDark Switcher" : "SwitcherLight Switcher"
+            }
+          ></div>
+        </button>
         {categoryData ? (
           <div
             className={
