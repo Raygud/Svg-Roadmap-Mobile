@@ -32,15 +32,14 @@ const SvgPath = (props) => {
   return (
     <>
       <a href="#Top">
-        <div
+        {/* <div
           onClick={() => {
             if (!isActive) {
               setIsActive(true);
             }
           }}
-          // style={isActive ? { display: "none" } : { display: "block" }}
           className={"ButtonClosed"}
-        ></div>
+        ></div> */}
       </a>
       <div
         onClick={() => {
