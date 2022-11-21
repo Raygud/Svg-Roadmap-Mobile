@@ -89,16 +89,10 @@ const SvgPath = (props) => {
             transform="translate(583.7 1415.16) scale(1.03 1)"
           >
             <tspan className="cls-9" x="0" y="0">
-              P
-            </tspan>
-            <tspan x="32.8" y="0">
-              oliti &amp;{" "}
+              Politi &amp;{" "}
             </tspan>
             <tspan className="cls-9" x="0" y="68.49">
-              F
-            </tspan>
-            <tspan x="29.62" y="68.49">
-              orsvar
+              Forsvar
             </tspan>
           </text>
           <text
