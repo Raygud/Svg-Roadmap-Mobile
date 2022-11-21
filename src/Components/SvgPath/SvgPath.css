@@ -47,7 +47,7 @@
 }
 
 .SvgMenuOpen {
-    bottom:45vh;
+    bottom:-45vh;
     height: 150%;
     box-shadow: 0vw -3vw 3vw 1vw rgba(0, 0, 0, 0.392);
 
