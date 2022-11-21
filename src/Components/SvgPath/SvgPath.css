@@ -20,7 +20,7 @@
     position: absolute;
     top: 0;
     width: 100vw;
-    height: 5vh;
+    height: 38vh;
     z-index: 10000;
 }
 
@@ -54,7 +54,7 @@
 }
 
 .SvgMenuClosed {
-    bottom: -66vh;
+    bottom: -66.5vh;
     height: 70%;
     box-shadow: 0vw -3vw 1vw -2vw rgba(0, 0, 0, 0.392);
 
