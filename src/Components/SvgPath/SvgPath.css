@@ -28,6 +28,8 @@
 .ButtonOpen {
     position: absolute;
     display: none;
+    width: 100vw;
+    height: 38vh;
 }
 
 #Top {
