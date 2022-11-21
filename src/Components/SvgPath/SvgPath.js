@@ -43,7 +43,7 @@ const SvgPath = (props) => {
       </a>
       <div
         onClick={() => {
-          setIsActive(false);
+          setIsActive((state) => !state);
           CloseMap(true);
         }}
         className={isActive ? "SvgMenuClosed svgMenu" : "SvgMenuOpen svgMenu"}
