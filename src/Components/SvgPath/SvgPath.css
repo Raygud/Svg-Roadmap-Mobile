@@ -54,7 +54,8 @@
 }
 
 .SvgMenuClosed {
-    bottom: -66vh;
+    bottom: 0;
+    height: 10%;
     box-shadow: 0vw -3vw 1vw -2vw rgba(0, 0, 0, 0.392);
 
 
