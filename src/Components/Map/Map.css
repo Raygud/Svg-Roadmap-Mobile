@@ -1,4 +1,4 @@
-.leaflet-container {
+/* .leaflet-container {
     width: 100vw;
     height: 100vh;
     z-index: 0;
@@ -6,12 +6,8 @@
 
 .DarkMode {
     -webkit-filter: invert(1) hue-rotate(0deg) sepia(100%) saturate(0%) brightness(1.5) grayscale(100%);
-}
-.MapsContainerFlex {
-    position: absolute;
-    top: 0;
-    left: 0;
-}
+} */
+
 
 /* .LightMode {
     -webkit-filter: sepia(0%) hue-rotate(190deg) saturate(200%) grayscale(0%) brightness(100%) invert(1) contrast(90%);
@@ -26,7 +22,7 @@
     top: 20vw;
 } */
 
-.leaflet-popup {
+/* .leaflet-popup {
     transform: none !important;
     position: absolute !important;
     top: 0 !important;
@@ -169,4 +165,4 @@
 
 .SwitcherLight {
     left: 0%;
-}
+} */

@@ -95,7 +95,6 @@ const Map = () => {
                         eventHandlers={{ click: () => onClick(coordsidx) }}
                         position={[coords.lat, coords.lng]}
                         icon={icon}
-                        key={coordsidx}
                       >
                         <div
                           className={
