@@ -36,6 +36,7 @@ const SvgPath = (props) => {
           onClick={() => {
             setIsActive(true);
           }}
+          style={isActive ? { display: "block" } : { display: "none" }}
           className={"ButtonClosed"}
         ></div>
       </a>
