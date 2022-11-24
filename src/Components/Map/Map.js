@@ -41,6 +41,7 @@ const Map = () => {
 
   const [runEffect, setRunEffect] = useState(false);
   const [coursedata, setCourseData] = useState([]);
+  const [hubdata, setHubData] = useState([]);
   const [categoryData, setCategoryData] = useState([]);
   const [isClicked, setIsClicked] = useState([]);
   const [mapMode, setMapMode] = useState(false);
@@ -52,6 +53,16 @@ const Map = () => {
       .then((response) => {
         console.log(response);
         setCourseData(response);
+      })
+      .catch((e) => {
+        // console.log(e);
+      });
+      axios
+      .get("https://sequelize-roadmap.herokuapp.com/school")
+      .then((response) => {
+        console.log(response);
+        console.log(response);
+        setHubData(response);
       })
       .catch((e) => {
         // console.log(e);
@@ -135,8 +146,60 @@ const Map = () => {
                   ) : (
                     <div></div>
                   )}
+                  
                 </React.Fragment>
               ))}
+              {hubdata.data?.map((coords, coordsidx) => (
+                <React.Fragment key={coordsidx}>
+                  {coords.start_up_community || coords.hub == true ? (
+                    <div id="MarkerStick">
+                      <Marker
+                        key={coordsidx}
+                        eventHandlers={{ click: () => onClick(coordsidx) }}
+                        position={[coords.lat, coords.lng]}
+                        icon={icon}
+                      >
+                        <div
+                          className={
+                            isClicked == coordsidx
+                              ? "StickyPopUp"
+                              : "HiddenPopUp"
+                          }
+                          key={coordsidx}
+                        >
+                          <div className="StickyHeader">
+                            <h2 className="StickyHeaderTitel">
+                              {coords.name}
+                            </h2>
+                            <button
+                              className="StickyPopUpButton"
+                              onClick={() => setIsClicked(null)}
+                            >
+                              X
+                            </button>
+                          </div>
+                          <img
+                            className="StickyHeaderImg"
+                            src={coords.image}
+                          ></img>
+                          <div className="StickHeaderInfo">
+                            <h6 className="StickyHeaderName">{coords.name}</h6>
+                            <p className="StickyHeaderDescription">
+                              {coords.description}
+                            </p>
+                          </div>
+                        </div>
+                      </Marker>
+                    </div>
+                  ) : (
+                    <div></div>
+                  )}
+                  
+                </React.Fragment>
+              ))}
+              
+
+              
             </MapContainer>
           </div>
         ) : (
@@ -150,3 +213,10 @@ const Map = () => {
 };
 
 export default Map;
+
+
+// {hubdata.data?.map((coords, coordsidx) => (
+//   <React.Fragment key={coordsidx}>
+//   {coords.start_up_community || coords.hub == true ?
+//     <h1>{coords.name}</h1>:<></>
+//    }
