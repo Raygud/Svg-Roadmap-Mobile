@@ -22,8 +22,9 @@ const Map = () => {
 
   const icon = L.icon({
     iconUrl: "/images/marker-icon.png",
-    iconAnchor: [125, 41],
-    popupAnchor: [-113, -40],
+    iconSize: [25,41],   
+  iconAnchor: [12.5, 41],
+  popupAnchor: [-113, -40]
   });
 
   function onClick(x) {

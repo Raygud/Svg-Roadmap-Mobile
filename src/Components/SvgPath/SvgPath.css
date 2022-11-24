@@ -33,7 +33,7 @@
 #Top {
     position: absolute;
     top: 0;
-} 
+}
 
 .line {
     position: absolute;
@@ -48,7 +48,7 @@
 }
 
 .SvgMenuOpen {
-    bottom:0vh;
+    bottom: 0vh;
     box-shadow: 0vw -3vw 3vw 1vw rgba(0, 0, 0, 0.392);
 
 }
@@ -58,7 +58,7 @@
     box-shadow: 0vw -3vw 1vw -2vw rgba(0, 0, 0, 0.392);
 
 
-} 
+}
 
 
 .cls-1,
@@ -176,4 +176,178 @@
 .cls-Eudx {
     stroke-dasharray: 1780;
     stroke-dashoffset: 1780;
+}
+
+@media only screen and (min-width: 768px) {
+    .svgMenu {
+        position: absolute;
+        box-sizing: border-box;
+        background-color: whitesmoke;
+        width: 30%;
+        height: 50vh;
+        z-index: 9999;
+        transition: 500ms ease-in-out;
+        border-top-left-radius: 20px;
+        border-left: 2px solid rgba(0, 0, 0, 0.201);
+        border-right: 2px solid rgba(0, 0, 0, 0.201);
+        padding: 3.5vw;
+        overflow: scroll;
+        right: 0vw;
+        top: 0vw;
+        height: 100%;
+        scroll-behavior: smooth;
+    }
+
+    .ButtonClosed {
+        position: absolute;
+        right: 0;
+        width: 100vw;
+        height: 38vh;
+        z-index: 10000;
+    }
+
+    .ButtonOpen {
+        position: absolute;
+        display: none;
+    }
+
+    #Top {
+        position: absolute;
+        top: 0;
+    }
+
+    .line {
+        display: none;
+    }
+
+    .SvgMenuOpen {
+        bottom: 0vh;
+        box-shadow: 0vw -3vw 3vw 1vw rgba(0, 0, 0, 0.392);
+
+    }
+
+    .SvgMenuClosed {
+        bottom: -46.5vh;
+        box-shadow: 0vw -3vw 1vw -2vw rgba(0, 0, 0, 0.392);
+
+
+    }
+
+
+    .cls-1,
+    .cls-2,
+    .cls-3,
+    .cls-4,
+    .cls-5,
+    .cls-6,
+    .cls-7 {
+        fill: none;
+    }
+
+    .cls-8 {
+        letter-spacing: -.02em;
+    }
+
+    .cls-9 {
+        letter-spacing: -.02em;
+    }
+
+    .cls-10 {
+        letter-spacing: -.02em;
+    }
+
+    .cls-11 {
+        letter-spacing: 0em;
+    }
+
+    .cls-2 {
+        stroke-dasharray: 0 0 45.17 18.07;
+    }
+
+    .cls-2,
+    .cls-3,
+    .cls-4,
+    .cls-5,
+    .cls-6,
+    .cls-7 {
+        stroke-miterlimit: 10;
+    }
+
+    .cls-2,
+    .cls-4,
+    .cls-6 {
+        stroke: #000;
+    }
+
+    .cls-2,
+    .cls-6 {
+        stroke-width: 12.65px;
+    }
+
+    .cls-12 {
+        fill: #fff;
+    }
+
+    .cls-3 {
+        stroke-width: 12.75px;
+    }
+
+    .cls-3,
+    .cls-5,
+    .cls-7 {
+        stroke: rgb(234, 0, 255);
+    }
+
+    .cls-13 {
+        letter-spacing: -.01em;
+    }
+
+    .cls-14 {
+        letter-spacing: -.01em;
+    }
+
+    .cls-15 {
+        letter-spacing: -.01em;
+    }
+
+    .cls-4 {
+        stroke-width: 10.84px;
+    }
+
+    .cls-5 {
+        stroke-width: 16.39px;
+    }
+
+    .cls-16 {
+        letter-spacing: 0em;
+    }
+
+    .cls-17 {
+        letter-spacing: 0em;
+    }
+
+    .cls-7 {
+        stroke-dasharray: 2855;
+        stroke-dashoffset: -2855;
+        stroke-width: 9px;
+        transition: 1200ms ease-in-out;
+    }
+
+    .cls-18 {
+        font-family: DINAlternate-Bold, 'DIN Alternate';
+        font-size: 57.07px;
+    }
+
+    .buttonHide {
+        display: none;
+    }
+
+    .buttonShow {
+        display: block;
+    }
+
+    .cls-Eudx {
+        stroke-dasharray: 1780;
+        stroke-dashoffset: 1780;
+    }
 }
