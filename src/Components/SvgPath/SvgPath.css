@@ -360,3 +360,7 @@
 .Access {
     stroke: rgb(0, 223, 0);
 }
+
+.PointerClick{
+    pointer-events: none;
+}
